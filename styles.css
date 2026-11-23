@@ -19,11 +19,7 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size
 .role { font-size: 19px; color: var(--muted); margin: 0 0 26px; }
 .bio { max-width: 610px; margin: 0 0 15px; }
 .intro-links { display: flex; flex-wrap: wrap; gap: 12px 25px; margin-top: 28px; font-size: 14px; }
-.research-note { border-top: 2px solid var(--accent); padding-top: 18px; align-self: center; }
-.note-number { font-size: 11px; letter-spacing: .12em; color: var(--muted); }
-.research-note p { font-family: Georgia, serif; font-size: 24px; margin: 23px 0 15px; }
-.research-note ul { list-style: none; padding: 0; margin: 0; font-size: 14px; color: var(--muted); }
-.research-note li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.portrait { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 62%; border: 1px solid var(--line); }
 .section { border-top: 1px solid var(--line); padding: 38px 0 58px; }
 .section-heading { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; margin-bottom: 30px; }
 h2 { font-family: Georgia, serif; font-size: 34px; font-weight: 400; margin: 0; letter-spacing: -.025em; }
@@ -68,7 +64,7 @@ footer { border-top: 1px solid var(--line); padding-top: 25px; padding-bottom: 3
   .site-header { flex-direction: column; align-items: flex-start; gap: 16px; }
   nav { gap: 18px; font-size: 13px; }
   .intro { grid-template-columns: 1fr; gap: 32px; padding: 48px 0; }
-  .research-note { display: none; }
+  .portrait { width: min(100%, 340px); justify-self: center; }
   .section { padding-top: 28px; padding-bottom: 40px; }
   .section-heading { flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
   .featured { padding: 23px; }
@@ -81,4 +77,4 @@ footer { border-top: 1px solid var(--line); padding-top: 25px; padding-bottom: 3
   footer { flex-wrap: wrap; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-@media print { body { background: white; font-size: 11pt; } nav, .research-note, .skip-link, footer { display: none; } .intro { display: block; padding: 25px 0; } .section { padding: 20px 0; } .paper, .course { break-inside: avoid; } }
+@media print { body { background: white; font-size: 11pt; } nav, .portrait, .skip-link, footer { display: none; } .intro { display: block; padding: 25px 0; } .section { padding: 20px 0; } .paper, .course { break-inside: avoid; } }
